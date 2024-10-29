@@ -1,0 +1,20 @@
+.navigation
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation__3D-button{
+    margin: 1rem;
+    color:rgb(235, 222, 206);
+    border: 3px solid rgb(235, 222, 206);
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    transition: .3s all;
+}
+
+.navigation__3D-button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
