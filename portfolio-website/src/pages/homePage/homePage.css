@@ -26,8 +26,39 @@
     transform: translateY(-3px);
 }
 
-.body{
-    margin-top: -11rem;
+.experience{
+    margin-top: -13rem;
+    padding: 15rem 5rem;
     height: 95vh;
     background-color:rgb(235, 222, 206);
+    
+}
+
+.experience__title{
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: rgba(46, 44, 44, 0.815);
+}
+
+.experience__divider{
+    border: 1px solid rgba(43, 42, 42, 0.151);
+    width: 75%;
+}
+
+.experience-block__head{
+    display: flex;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgba(43, 42, 42, 0.336);
+    border-radius: 50%;
+}
+
+
+
+.patents-body{
+    display: flex;
+    flex-direction: row;
 }
