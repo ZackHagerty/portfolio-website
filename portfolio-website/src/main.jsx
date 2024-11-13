@@ -6,6 +6,7 @@ import './index.css'
 //Other components
 import HomePage from './pages/homePage/homePage.jsx'
 import ErrorPage from './pages/errorPage/errorPage.jsx'
+import Scene from './scenes/scene.jsx'
 
 const router = createBrowserRouter([
   {
