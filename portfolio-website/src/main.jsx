@@ -4,9 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 
 //Other components
-import HomePage from './pages/homePage/homePage.jsx'
-import ErrorPage from './pages/errorPage/errorPage.jsx'
-import Scene from './scenes/scene.jsx'
+import HomePage from './html-site/HomePage/HomePage.jsx'
+import ErrorPage from './html-site/ErrorPage/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {

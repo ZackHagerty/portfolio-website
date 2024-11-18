@@ -1,0 +1,31 @@
+
+.header__container{
+    height: 50vh;
+    margin: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title{
+    font-size: 9.5rem;
+    font-weight: 400;
+    transition: 1s all;
+}
+
+.header__title:hover{
+    transform: translateY(-3px);
+}
+
+.header__subtitle{
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    margin-top: -2rem;
+}
+
+.header__description{
+    font-size: 1rem;
+    font-weight: 500
+}
+
+

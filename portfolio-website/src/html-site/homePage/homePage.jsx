@@ -1,4 +1,4 @@
-import Scene from '../../scenes/scene'
+import Scene from '../../three.js/scene'
 import Navbar from '../../utility/navbar/navbar'
 import './HomePage.css'
 

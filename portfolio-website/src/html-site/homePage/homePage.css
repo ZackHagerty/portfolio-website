@@ -1,36 +1,18 @@
-
 .header{
     height: 95vh;
     background: linear-gradient(to right bottom, rgba(238,174,202,1) 1%, rgba(232,155,219,1) 50%, rgba(233,148,148,1) 100%);
     border-radius: 10px;
-    color:rgb(235, 222, 206);
+    color:rgb(48, 48, 54);
 
     -webkit-clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
-}
-
-.header__container{
-    height: 50vh;
-    padding: 10rem 10vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.header__name{
-    font-size: 10rem;
-    font-weight: 400;
-    transition: 1s all;
-}
-
-.header__name:hover{
-    transform: translateY(-3px);
 }
 
 .experience{
     margin-top: -13rem;
     padding: 15rem 5rem;
     height: 95vh;
-    background-color:rgb(235, 222, 206);
+    background-color:rgb(255, 250, 255);
     
 }
 
