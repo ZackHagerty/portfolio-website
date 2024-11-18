@@ -1,0 +1,29 @@
+.experience{
+    margin-top: -13rem;
+    padding: 15rem 5rem;
+    height: 95vh;
+    background-color:rgb(255, 250, 255);
+    
+}
+
+.experience__title{
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: rgba(69, 69, 69, 0.8);
+}
+
+.experience__divider{
+    border: 1px solid rgba(69, 69, 69, 0.4);
+    width: 75%;
+}
+
+.experience-block__head{
+    display: flex;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgba(82, 183, 136, 0.8);
+    border-radius: 50%;
+}
