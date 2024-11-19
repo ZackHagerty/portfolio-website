@@ -14,9 +14,9 @@ export default function Experience()
     const { camera, gl } = useThree();
     return <>
     
-        <directionalLight position = { [ 1, 2, 3 ] } intensity={ 3.5} />
+        {/* <directionalLight position = { [ 1, 2, 3 ] } intensity={ 3.5} /> */}
         <ambientLight intensity = { 1.5 }></ambientLight>
-        {/* <orbitControls args = { [camera, gl.domElement ]} enableZoom={false} /> */}
+        <orbitControls args = { [camera, gl.domElement ]} enableZoom={false} />
 
         <Sky sunPosition={[100, 5, 100]} />
 
