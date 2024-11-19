@@ -32,7 +32,7 @@ export default function Scene()
                 I'm constantly challenging myself to embue professional work with creativity in a way that exceeds expectations. <br/>
                 When I'm not coding, I'm rock climbing, boxing, or building something.
             </p>
-            </Html>
+        </Html>
         <Experience />
 
         </Canvas>

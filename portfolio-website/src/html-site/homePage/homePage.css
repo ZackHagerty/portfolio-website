@@ -16,7 +16,7 @@
     padding: 10rem 5rem;
     /* -webkit-clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%); */
     clip-path: polygon(0 0,100% 10vh, 100% 100%, 0 85%);
-    background-color: palegreen;
+    background-color: #d66853;
 }
 
 
