@@ -10,7 +10,8 @@ const WindWakerWaterMaterial = shaderMaterial(
   { uTime: 0,
     uWaterColor: new THREE.Uniform(new THREE.Color('#ff1122')),
     uFoamColor: new THREE.Uniform(new THREE.Color('#ffffff')),
-    uTexture: new THREE.Uniform()
+    uTexture: new THREE.Uniform(),
+    uUnderLayer: new THREE.Uniform(false)
    }, 
    ` // Vertex Shader
    varying vec2 vUv;
@@ -38,7 +39,6 @@ const WindWakerWaterMaterial = shaderMaterial(
 
    float stop1 = .025;
    float stop2 = .065;
-
 
    vec3 white = vec3(1.000, 1.000, 1.000);
    vec3 black = vec3(0.0, 0.0, 0.0);
@@ -91,8 +91,8 @@ const WindWakerWaterMaterial = shaderMaterial(
        vec3 smoothColor = vec3(0.0);
        vec2 smoothPosition = vec2(0.0);
        //探索範囲が５＊５なのはsmoothnessが大きいと他のセルの影響が大きくなり３＊３だと不十分なため
-       for(int j = -2; j <=2; j++){
-           for(int i = -2; i <=2; i++){
+       for(int j = -1; j <=1; j++){
+           for(int i = -1; i <=1; i++){
                vec2 cellOffset = vec2(i,j);
                vec2 pointPosition = cellOffset + Hash_2D_to_2D(cellPosition + cellOffset) * randomness;
    
@@ -116,7 +116,7 @@ const WindWakerWaterMaterial = shaderMaterial(
    
  void main(){
  
-    vec2 uv = vUv * 25.0;  // Scale the UVs for resolution control
+    vec2 uv = vUv * 15.0;  // Scale the UVs for resolution control
  
     float musgraveHeight = texture(uTexture, vUv).r;
 
@@ -125,7 +125,7 @@ const WindWakerWaterMaterial = shaderMaterial(
 
     float f1Noise = voronoi_f1_2d(uv, 1.0);
     float smoothF1 = voronoi_smooth_f1_2d(uv, .450, 1.0);
-
+  
     float clampFactor = f1Noise - smoothF1; 
     
     vec4 emission = vec4(uFoamColor * 8.0, 1.0);
@@ -167,7 +167,6 @@ export function Water() {
         ref={materialRef2} 
         uFoamColor = { new THREE.Color('#333333') }
         uWaterColor = { new THREE.Color('#347c92') }
-        transparent={true}
       />
     </mesh>
   </>
