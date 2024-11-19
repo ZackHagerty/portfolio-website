@@ -1,4 +1,4 @@
-import './education.css';
+import './education.scss';
 
 export default function Education()
 {

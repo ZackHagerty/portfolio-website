@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './index.css'
+import './index.scss'
 
 //Other components
 import HomePage from './html-site/HomePage/HomePage.jsx'

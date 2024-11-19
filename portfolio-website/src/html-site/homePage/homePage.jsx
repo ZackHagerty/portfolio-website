@@ -2,7 +2,7 @@ import Scene from '../../three.js/scene'
 import Navbar from '../../utility/navbar/navbar'
 import Experience from './experience/experience'
 
-import './homePage.css'
+import './homePage.scss'
 
 
 export default function HomePage()

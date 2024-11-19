@@ -120,7 +120,7 @@ const WindWakerWaterMaterial = shaderMaterial(
  
     float musgraveHeight = texture(uTexture, vUv).r;
 
-    uv.y += musgraveHeight  * .2;
+    uv.y += musgraveHeight  * .25;
     uv += uTime * .06;  // Animate the pattern by adding uTime to the UV coordinates
 
     float f1Noise = voronoi_f1_2d(uv, 1.0);
@@ -143,8 +143,6 @@ export function Water() {
   const materialRef1 = useRef();
   const materialRef2 = useRef();
   const musgraveTexture = useLoader(TextureLoader, "/MusgraveTexture.jpg");
-  // musgraveTexture.wrapS = THREE.RepeatWrapping;
-  // musgraveTexture.wrapT = THREE.RepeatWrapping;
 
   useFrame(({ clock }) => {
     if (materialRef1.current) materialRef1.current.uTime = clock.getElapsedTime();

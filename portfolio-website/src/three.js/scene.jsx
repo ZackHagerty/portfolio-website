@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import * as THREE from 'three'
 import { Html } from '@react-three/drei'
 import Experience from './experience'
-import './scene.css';
+import './scene.scss';
 
 export default function Scene()
 {

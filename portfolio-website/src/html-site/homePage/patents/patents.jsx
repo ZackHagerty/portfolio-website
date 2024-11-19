@@ -1,4 +1,4 @@
-import './patents.css';
+import './patents.scss';
 
 export default function Patents(){
     
