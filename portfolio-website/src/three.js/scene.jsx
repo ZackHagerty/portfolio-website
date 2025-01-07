@@ -33,16 +33,20 @@ export default function Scene()
                     max: 0.9
                 }}
                 >          
-        {/* <Html as='div' wrapperClass={'header__container'} fullscreen={true}>
+        <Html as='div' wrapperClass={'header__container'} fullscreen={true}>
             <h1 className='header__title'>Zack Hagerty</h1>
             <h4 className='header__subtitle'> 
                 Engineer with a proven track record of delivering consistent results
             </h4>
-            <p className="header__description">
-                I'm constantly challenging myself to embue professional work with creativity in a way that exceeds expectations. <br/>
-                When I'm not coding, I'm rock climbing, boxing, or building something.
-            </p>
-        </Html> */}
+            <div className="header__links">
+                <svg class="header__icon">
+                    <use href="github.svg#github-icon"></use>
+                </svg>
+                <svg class="header__icon">
+                    <use href="linkedin.svg#linkedin-icon"></use>
+                </svg>
+            </div>
+        </Html>
         <Experience />
         </Canvas>
 }
