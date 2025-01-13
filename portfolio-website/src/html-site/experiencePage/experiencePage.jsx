@@ -1,6 +1,6 @@
-import './experience.scss';
+import './experiencePage.scss';
 
-export default function Experience(){
+export default function ExperiencePage(){
     
     return <>
         <section className='experience'>
