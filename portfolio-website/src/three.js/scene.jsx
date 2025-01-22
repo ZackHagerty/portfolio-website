@@ -39,12 +39,16 @@ export default function Scene()
                 Engineer with a proven track record of delivering consistent results
             </h4>
             <div className="header__links">
-                <svg class="header__icon">
-                    <use href="github.svg#github-icon"></use>
-                </svg>
-                <svg class="header__icon">
-                    <use href="linkedin.svg#linkedin-icon"></use>
-                </svg>
+                <a href="https://github.com/ZackHagerty" target="_blank" rel="noopener noreferrer">
+                    <svg class="header__icon">
+                        <use href="github.svg#github-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/zackaryhagerty/" target="_blank" rel="noopener noreferrer">
+                    <svg class="header__icon">
+                        <use href="linkedin.svg#linkedin-icon"></use>
+                    </svg>
+                </a>
             </div>
         </Html>
         <Experience />
