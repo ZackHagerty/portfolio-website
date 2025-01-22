@@ -1,6 +1,6 @@
-import './patentPage.scss';
+import './patents.scss';
 
-export default function PatentPage(){
+export default function Patents(){
     
     return <>
     <section className='patent'>

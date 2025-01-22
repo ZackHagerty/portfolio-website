@@ -1,6 +1,6 @@
 import Scene from '../../three.js/scene'
 import Navbar from '../../utility/navbar/navbar'
-import Experience from '../experiencePage/experiencePage'
+import Experience from './experience/experience'
 
 import './homePage.scss'
 
