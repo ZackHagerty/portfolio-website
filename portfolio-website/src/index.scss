@@ -1,3 +1,15 @@
+/* Variables */
+
+:root{
+  --blue: #30BCED;
+  --ghostwhite: #FFFAFF;
+  --gray: #444545;
+  --jasper: #D66853;
+  --mint: #52B788;
+}
+
+/* Global Resets */
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;

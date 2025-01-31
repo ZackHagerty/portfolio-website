@@ -1,5 +1,4 @@
 import Scene from '../../three.js/scene'
-import Scene2 from '../../three.js/scene2'
 import Navbar from '../../utility/navbar/navbar'
 import Experience from './experience/experience'
 
@@ -13,9 +12,7 @@ export default function HomePage()
             {/* <Navbar />  */}
             <Scene/>
         </section>
-        <section>
-        <Scene2/>
-        </section>
+            <Experience/>
         <section className='patent'>
             <div className='experience__header'>
                 <h3 className='experience__title'>Patents</h3>

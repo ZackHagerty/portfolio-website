@@ -1,3 +1,44 @@
 .experience{
-  margin: 150rem;
+height: 70rem;
+padding: 2rem 10rem;
+display: flex;
+flex-direction: column;
+
+  &__title{
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0 auto;
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-evenly;
+  }  
 }
+
+.card{
+  width: 40rem;
+  height: 25rem;
+  background-color: var(--blue);
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  
+  &__title{
+    font-size: 2rem;
+    font-weight: 600;
+    
+    margin: -3rem 0rem 0 1rem;
+  }
+}
+
+img {
+	max-width: 100%;
+  display: fill;
+  z-index: 10;
+  margin-top: -7rem;
+}
+
+
