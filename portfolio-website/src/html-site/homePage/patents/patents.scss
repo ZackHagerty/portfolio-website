@@ -1,0 +1,59 @@
+.patent{
+    height: 95vh;
+    margin-top: -10rem;
+    padding: 10rem 5rem;
+    /* -webkit-clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%); */
+    clip-path: polygon(0 0,100% 10vh, 100% 100%, 0 85%);
+    background-color: #d66853;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.patents-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.patent-container{
+    background-color: #f0e5e5;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px .4rem .9rem;
+    padding: 3rem;
+    border-radius: 5px;
+    width: 40%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.patent-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.patent__button{
+    margin: 1rem;
+    color:rgb(39, 38, 36);
+    border: 3px solid rgb(39, 38, 36);
+    padding: .2rem 1rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    transition: .3s all;
+}
+
+.patent__button:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.patent__button:active{
+    transform: translateY(2px);
+    transition: .2s all;
+}
