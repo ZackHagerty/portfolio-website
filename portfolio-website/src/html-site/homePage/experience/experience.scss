@@ -1,8 +1,8 @@
 .experience{
-height: 70rem;
-padding: 2rem 10rem;
-display: flex;
-flex-direction: column;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+
 
   &__title{
     font-size: 5rem;
@@ -13,10 +13,32 @@ flex-direction: column;
   &__container{
     display: flex;
     flex-direction: row;
-    gap: 4rem;
     justify-content: space-evenly;
+    gap: 4rem;
+
+    @media only screen and (max-width: 68.75em)
+    {
+      flex-direction: column;
+      align-items: center;
+    }
   }  
 }
+
+
+.jobs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;  
+  padding: 1rem;
+
+  &__header{
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
 
 .card{
   width: 40rem;
@@ -35,10 +57,76 @@ flex-direction: column;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
   display: fill;
   z-index: 10;
   margin-top: -7.5rem;
+}
+
+.patents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;  
+  padding: 1rem;
+
+  &__header{
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+
+
+.patent-container{
+  background-color: #f0e5e5;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px .4rem .9rem;
+  padding: 3rem;
+  border-radius: 5px;
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  
+  @media only screen and (max-width: 31.25em){
+      width: 40rem;  
+  }
+
+  &__title{
+      font-size: 1.5rem;
+  }
+
+  &__body{
+      margin-bottom: auto ;
+      font-size: 1.3rem;
+  }
+
+  &__footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  &__button{
+      margin: 1rem;
+      color:rgb(39, 38, 36);
+      border: 3px solid rgb(39, 38, 36);
+      padding: .2rem 1rem;
+      font-size: 1.1rem;
+      background-color: transparent;
+      transition: .3s all;
+
+      &:hover{
+          transform: translateY(-2px);
+          cursor: pointer;
+          transition: .2s all;
+      }
+
+      &:active{
+          transform: translateY(2px);
+          transition: .2s all;
+      }
+  }
 }
 
 

@@ -8,6 +8,12 @@
   --mint: #52B788;
 }
 
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
 /* Global Resets */
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -53,42 +59,26 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/*
- 10. Responsive font sizes
-*/
-@mixin respond($breakpoint){
-  @if $breakpoint == phone {
-      @media only screen and (max-width: 37.5em) { @content }; //600px
-  }
-  @if $breakpoint == tab-port {
-      @media only screen and (max-width: 56.25em) { @content }; //900px
-  }
-  @if $breakpoint == tab-land {
-      @media only screen and (max-width: 75em) { @content }; //1200px
-  }
-  @if $breakpoint == big-desktop {
-      @media only screen and (min-width: 112.5em) { @content }; //1800px
-  }
-}
 
 html {
   //this defines what 1rem is
   font-size: 62.5%; //1rem = 10px; 10px / 16px = 62.5
   
-  @include respond(tab-land) {
+  @media only screen and(min-width: $bp-largest) {
+    font-size: 75%; //1rem = 12px, 12/16 
+  }
+
+  @media only screen and (max-width: $bp-large){
       font-size: 56.25%; //1 rem =  
   }
 
-  @include respond(tab-port) {
+  @media only screen and (max-width: $bp-medium){
       font-size: 50%; //1 rem = 8px, 8/16 = 56.25%;
   }
 
-  @include respond(phone) {
+  
+  @media only screen and (max-width: $bp-smallest){
       font-size: 50%; //1 rem = 8px, 8/16 = 50%
-  }
-
-  @include respond(big-desktop) {
-      font-size: 75%; //1rem = 12px, 12/16 
   }
 }
 
