@@ -4,12 +4,32 @@
     margin: 10rem 5rem;
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: 56.25em)
+    {
+        margin: 7.5rem 3.5rem;
+    }
+
+    @media only screen and (max-width: 25em){
+        margin: 7rem 3rem;
+    }
+
 }
 
 .header__title{
     font-size: 12rem;
     font-weight: 400;
     transition: 1s all;
+
+    @media only screen and (max-width: 56.25em)
+    {
+        font-size: 9rem;
+    }
+
+    @media only screen and (max-width: 25em){
+        font-size: 7rem;
+    }
+
 }
 
 .header__title:hover{
@@ -17,11 +37,15 @@
 }
 
 .header__subtitle{
-    font-size: 1.35rem;
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: .5rem;
     margin-top: -2rem;
+
+    @media only screen and (max-width: 56.25em)
+    {
+        font-size: 1.7rem;
+    }
 }
 
 .header__description{

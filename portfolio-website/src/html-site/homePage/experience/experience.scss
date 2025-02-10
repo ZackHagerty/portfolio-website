@@ -1,8 +1,15 @@
 .experience{
-  padding: 2rem 10rem;
+  padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: 56.25em){
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: 31.25em){
+    padding: 4rem;
+}
 
   &__title{
     font-size: 5rem;
@@ -16,12 +23,14 @@
     justify-content: space-evenly;
     gap: 4rem;
 
-    @media only screen and (max-width: 68.75em)
+    @media only screen and (max-width: 100.0em)
     {
       flex-direction: column;
       align-items: center;
     }
   }  
+
+  
 }
 
 
@@ -41,26 +50,80 @@
 
 
 .card{
-  width: 40rem;
-  height: 25rem;
-  background-color: var(--blue);
+  width: 60rem;
+  background-color:#f0e5e5;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
+  display: flex;
   
-  &__title{
-    font-size: 2rem;
-    font-weight: 600;
-    
-    margin: -3rem 0rem 0 1rem;
+  @media only screen and (max-width: 31.25em){
+    width: 50rem;
+    padding: 1rem;
   }
+
+  @media only screen and (max-width: 25em){
+    width: 40rem;
+    padding: .75rem;
+}
+
+
+  &__body{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 31.25em){
+      width: 100%;
+    }
+    
+    &-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__image{
+    width: 30%;
+
+    @media only screen and (max-width: 31.25em){
+      width: 0%;
+    }
+  }
+
+  &__title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 1rem 0 1rem;
+
+    @media only screen and (max-width: 31.25em){
+      font-size: 1.7rem;  
+    }
+
+    @media only screen and (max-width: 25em){
+      font-size: 1.4rem;
+  }
+
+
+  }
+
+  &__description{
+    margin-bottom: auto ;
+    font-size: 1.3rem;
+    padding: 1rem;
+
+    @media only screen and (max-width: 31.25em){
+      font-size: 1.5rem;  
+  }
+}
+  
 }
 
 img {
   max-width: 100%;
   display: fill;
   z-index: 10;
-  margin-top: -7.5rem;
 }
 
 .patents{
@@ -75,6 +138,7 @@ img {
     font-size: 3rem;
     font-weight: 400;
   }
+
 }
 
 
@@ -89,16 +153,29 @@ img {
   flex-direction: column;
   
   @media only screen and (max-width: 31.25em){
-      width: 40rem;  
+      width: 50rem;  
   }
+
+  @media only screen and (max-width: 25em){
+    width: 40rem;
+}
+
 
   &__title{
       font-size: 1.5rem;
+
+    @media only screen and (max-width: 31.25em){
+      font-size: 1.7rem;  
+    }
   }
 
   &__body{
       margin-bottom: auto ;
       font-size: 1.3rem;
+
+      @media only screen and (max-width: 31.25em){
+        font-size: 1.5rem;  
+    }
   }
 
   &__footer{
@@ -113,8 +190,14 @@ img {
       border: 3px solid rgb(39, 38, 36);
       padding: .2rem 1rem;
       font-size: 1.1rem;
+      font-weight: 600;
       background-color: transparent;
       transition: .3s all;
+
+      @media only screen and (max-width: 31.25em){
+        font-size: 1.5rem;
+        padding: .4rem 1.5rem;
+      }
 
       &:hover{
           transform: translateY(-2px);

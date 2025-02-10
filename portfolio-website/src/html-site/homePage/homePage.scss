@@ -7,6 +7,27 @@
     -webkit-clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
 
+    @media only screen and (max-width: 68.75em)
+    {
+        height: 70vh;
+        clip-path: polygon(0 0,100% 0, 100% 65vh, 0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0, 100% 65vh, 0 100%);
+    }
+
+    @media only screen and (max-width: 37.5em)
+    {
+        height: 65vh;
+        clip-path: polygon(0 0,100% 0, 100% 60vh, 0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0, 100% 60vh, 0 100%);
+    }
+
+    @media only screen and (max-width: 37.5em)
+    {
+        height: 45vh;
+        clip-path: polygon(0 0,100% 0, 100% 36vh, 0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0, 100% 42vh, 0 100%);
+    }
+
 }
 
 .utility__spacer{

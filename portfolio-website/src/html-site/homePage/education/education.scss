@@ -13,6 +13,14 @@
         font-weight: 400;
         margin: 0 auto;
     }
+
+    @media only screen and (max-width: 31.25em){
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width: 25em){
+        padding: 1rem;
+    }
 }
 
 
@@ -39,16 +47,28 @@
     flex-direction: column;
     
     @media only screen and (max-width: 31.25em){
-        width: 40rem;  
+        width: 50rem;  
+    }
+
+    @media only screen and (max-width: 25em){
+        width: 40rem;
     }
 
     &__title{
         font-size: 1.5rem;
+
+        @media only screen and (max-width: 31.25em){
+            font-size: 1.7rem;  
+        }
     }
 
     &__body{
         margin-bottom: auto ;
         font-size: 1.3rem;
+
+        @media only screen and (max-width: 31.25em){
+            font-size: 1.5rem;  
+        }
     }
 
     &__footer{
